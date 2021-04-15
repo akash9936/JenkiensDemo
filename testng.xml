@@ -4,7 +4,9 @@
   <test name="JenkiensDemo">
 
   <classes>
-  <class name="com.JenkiensDemo.dummy.dummyOne"/>
+  <class name="com.JenkiensDemo.dummy.dummyThree"/>
+   <class name="com.JenkiensDemo.dummy.dummyTwo"/>
+    <class name="com.JenkiensDemo.dummy.dummyOne"/>
   </classes>
   </test> 
 </suite> 
