@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-JenkiensDemo" class="show-methods passed suite-JenkiensDemo"> (show)</a> <!-- show-methods passed suite-JenkiensDemo -->
                     </span>
                     <div class="method-list-content passed suite-JenkiensDemo">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JenkiensDemo" title="com.JenkiensDemo.dummy.dummyOne$NewTestStartedDummy" class="method navigator-link" hash-for-method="TestClass">TestClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JenkiensDemo" title="com.JenkiensDemo.dummy.dummyThree" class="method navigator-link" hash-for-method="dummyThreeDel">dummyThreeDel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-JenkiensDemo" title="com.JenkiensDemo.dummy.dummyTwo" class="method navigator-link" hash-for-method="dummytwodel">dummytwodel</a> <!-- method navigator-link -->
@@ -120,6 +130,21 @@
           <div class="suite-JenkiensDemo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.JenkiensDemo.dummy.dummyThree</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dummyThreeDel">
+                  </a> <!-- dummyThreeDel -->
+                  <span class="method-name">dummyThreeDel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JenkiensDemo-class-passed -->
+          <div class="suite-JenkiensDemo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.JenkiensDemo.dummy.dummyTwo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,6 +153,21 @@
                   <a name="dummytwodel">
                   </a> <!-- dummytwodel -->
                   <span class="method-name">dummytwodel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JenkiensDemo-class-passed -->
+          <div class="suite-JenkiensDemo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.JenkiensDemo.dummy.dummyOne$NewTestStartedDummy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestClass">
+                  </a> <!-- TestClass -->
+                  <span class="method-name">TestClass</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +184,9 @@
 &lt;suite name=&quot;JenkiensDemo&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;JenkiensDemo&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.JenkiensDemo.dummy.dummyThree&quot;/&gt;
       &lt;class name=&quot;com.JenkiensDemo.dummy.dummyTwo&quot;/&gt;
+      &lt;class name=&quot;com.JenkiensDemo.dummy.dummyOne&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- JenkiensDemo --&gt;
 &lt;/suite&gt; &lt;!-- JenkiensDemo --&gt;
@@ -158,7 +200,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">JenkiensDemo (1 class)</span>
+                <span class="test-name">JenkiensDemo (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +226,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dummytwodel')
-data.setCell(0, 2, 'com.JenkiensDemo.dummy.dummyTwo')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'dummyThreeDel')
+data.setCell(0, 2, 'com.JenkiensDemo.dummy.dummyThree')
+data.setCell(0, 3, 11);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestClass')
+data.setCell(1, 2, 'com.JenkiensDemo.dummy.dummyOne$NewTestStartedDummy')
+data.setCell(1, 3, 5);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'dummytwodel')
+data.setCell(2, 2, 'com.JenkiensDemo.dummy.dummyTwo')
+data.setCell(2, 3, 2);
 window.suiteTableData['JenkiensDemo']= { tableData: data, tableDiv: 'times-div-JenkiensDemo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 18 ms</span>
               <div id="times-div-JenkiensDemo">
               </div> <!-- times-div-JenkiensDemo -->
             </div> <!-- times-div -->
@@ -219,10 +269,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.JenkiensDemo.dummy.dummyThree</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dummyThreeDel</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.JenkiensDemo.dummy.dummyOne$NewTestStartedDummy</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestClass</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.JenkiensDemo.dummy.dummyTwo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">dummytwodel</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
