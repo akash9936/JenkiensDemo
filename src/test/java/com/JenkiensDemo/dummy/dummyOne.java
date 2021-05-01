@@ -11,7 +11,7 @@ public class dummyOne {
 public class NewTestStartedDummy {
   @Test
   public void TestClass() {
-	  System.out.println("We are in Test 2");
+	  System.out.println("We are in Test 3");
 	  Assert.assertTrue(true);
   }
   @BeforeMethod
