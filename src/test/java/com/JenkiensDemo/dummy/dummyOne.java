@@ -11,11 +11,10 @@ public class dummyOne {
 public class NewTestStartedDummy {
   @Test
   public void TestClass() {
-<<<<<<< HEAD
 	  System.out.println("We are in Test 4");
-=======
+
 	  System.out.println("We are in Test 5");
->>>>>>> cd7fbf0f619a15f854378504ae9493a4dfe0a55e
+
 	  Assert.assertTrue(true);
   }
   @BeforeMethod
